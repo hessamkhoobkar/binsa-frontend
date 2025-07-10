@@ -3,7 +3,7 @@ import { Rubik } from "next/font/google";
 import "./globals.css";
 
 const rubikSans = Rubik({
-  variable: "--font-geist-sans",
+  variable: "--font-rubik-sans",
   subsets: ["latin"],
 });
 
@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${rubikSans.variable} antialiased`}>{children}</body>
+      <body className={`${rubikSans.className} antialiased`}>{children}</body>
     </html>
   );
 }
