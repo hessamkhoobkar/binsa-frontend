@@ -9,7 +9,7 @@ export default function SignIn() {
       </div>
 
       <div className="flex w-full flex-col gap-4">
-        <label className="input validator w-full">
+        <label className="input validator h-12 w-full">
           <svg
             className="h-[1em] opacity-50"
             xmlns="http://www.w3.org/2000/svg"
@@ -30,7 +30,7 @@ export default function SignIn() {
         </label>
         <div className="validator-hint hidden">Enter valid email address</div>
 
-        <label className="input validator w-full">
+        <label className="input validator h-12 w-full">
           <svg
             className="h-[1em] opacity-50"
             xmlns="http://www.w3.org/2000/svg"
@@ -63,11 +63,11 @@ export default function SignIn() {
           At least one uppercase letter
         </p>
 
-        <button className="btn btn-primary">Log in</button>
+        <button className="btn btn-primary h-12">Log in</button>
       </div>
       <div className="divider my-8">OR</div>
       <div className="flex w-full flex-col gap-4">
-        <button className="btn btn-block border-black bg-black text-white">
+        <button className="btn btn-block h-12 border-black bg-black text-white">
           <svg
             aria-label="GitHub logo"
             width="16"
@@ -83,7 +83,7 @@ export default function SignIn() {
           Login with GitHub
         </button>
 
-        <button className="btn btn-block border-[#e5e5e5] bg-white text-black">
+        <button className="btn btn-block h-12 border-[#e5e5e5] bg-white text-black">
           <svg
             aria-label="Google logo"
             width="16"
