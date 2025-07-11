@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Login() {
+export default function SignIn() {
   return (
     <div className="mx-auto flex h-full w-full max-w-md flex-col items-center justify-center">
       <div className="mb-8 flex w-full flex-col items-center justify-center gap-2 text-center">
