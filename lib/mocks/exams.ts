@@ -65,7 +65,7 @@ const exams: Exam[] = [
     passing_score: 75,
     attempts_allowed: 3,
     score_method: "total_correct",
-    color: "oklch(88.5% 0.062 18.334)",
+    color: "oklch(89.2% 0.058 10.001)",
   },
   {
     id: 2,
@@ -82,7 +82,7 @@ const exams: Exam[] = [
     status: "approved",
     passing_score: 80,
     score_method: "weighted",
-    color: "oklch(90.1% 0.076 70.697)",
+    color: "oklch(92.4% 0.12 95.746)",
   },
   {
     id: 3,
@@ -99,7 +99,7 @@ const exams: Exam[] = [
     status: "approved",
     attempts_allowed: 5,
     score_method: "time_based",
-    color: "oklch(92.4% 0.12 95.746)",
+    color: "oklch(91.7% 0.08 205.041)",
   },
   {
     id: 4,
@@ -115,7 +115,7 @@ const exams: Exam[] = [
     status: "pending",
     passing_score: 70,
     score_method: "total_correct",
-    color: "oklch(94.5% 0.129 101.54)",
+    color: "oklch(88.2% 0.059 254.128)",
   },
   {
     id: 5,
@@ -130,7 +130,7 @@ const exams: Exam[] = [
     category: "Grammar",
     status: "approved",
     score_method: "total_correct",
-    color: "oklch(93.8% 0.127 124.321)",
+    color: "oklch(90.2% 0.063 306.703)",
   },
   {
     id: 6,
@@ -164,7 +164,7 @@ const exams: Exam[] = [
     category: "Vocabulary",
     status: "approved",
     score_method: "weighted",
-    color: "oklch(90.5% 0.093 164.15)",
+    color: "oklch(93.8% 0.127 124.321)",
   },
   {
     id: 8,
@@ -180,7 +180,7 @@ const exams: Exam[] = [
     status: "pending",
     passing_score: 80,
     score_method: "total_correct",
-    color: "oklch(91% 0.096 180.426)",
+    color: "oklch(90.1% 0.076 70.697)",
   },
   {
     id: 9,
@@ -196,7 +196,7 @@ const exams: Exam[] = [
     category: "Grammar",
     status: "approved",
     score_method: "time_based",
-    color: "oklch(91.7% 0.08 205.041)",
+    color: "oklch(89.2% 0.058 10.001)",
   },
   {
     id: 10,
@@ -261,7 +261,7 @@ const exams: Exam[] = [
     category: "Grammar",
     status: "rejected",
     score_method: "total_correct",
-    color: "oklch(89.4% 0.057 293.283)",
+    color: "oklch(88.5% 0.062 18.334)",
   },
   {
     id: 14,
