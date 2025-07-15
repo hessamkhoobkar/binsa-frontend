@@ -3,10 +3,32 @@
 @plugin "daisyui" {
   themes: cupcake --default;
   root: ":root";
-  include: ;
-  exclude: ;
-  prefix: ;
+  include:;
+  exclude:;
+  prefix:;
   logs: true;
+}
+
+@theme {
+  --breakpoint-3xl: 120rem;
+  --max-width-hd: 120rem;
+  --container-max-width-3xl: 120rem;
+}
+
+@layer components {
+  .binsa-container {
+    width: 100%;
+    padding-inline-end: 1rem;
+    padding-inline-start: 1rem;
+  }
+
+  @media screen and (min-width: theme("breakpoint.3xl")) {
+    .binsa-container {
+      margin-inline-end: auto;
+      margin-inline-start: auto;
+      max-width: var(--max-width-hd);
+    }
+  }
 }
 
 /* 
