@@ -31,6 +31,10 @@
   }
 }
 
+@utility select {
+  @apply cursor-pointer transition-all duration-200 ease-in-out hover:bg-white;
+}
+
 /* 
 :root {
   --background: #ffffff;
