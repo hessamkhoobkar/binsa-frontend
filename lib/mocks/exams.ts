@@ -26,7 +26,27 @@ export type Exam = {
   attempts_allowed?: number;
   questions?: Question[];
   score_method: ExamScoreMethod;
+  color: string;
 };
+
+// Color Palate
+// oklch(88.5% 0.062 18.334)
+// oklch(90.1% 0.076 70.697)
+// oklch(92.4% 0.12 95.746)
+// oklch(94.5% 0.129 101.54)
+// oklch(93.8% 0.127 124.321)
+// oklch(92.5% 0.084 155.995)
+// oklch(90.5% 0.093 164.15)
+// oklch(91% 0.096 180.426)
+// oklch(91.7% 0.08 205.041)
+// oklch(90.1% 0.058 230.902)
+// oklch(88.2% 0.059 254.128)
+// oklch(87% 0.065 274.039)
+// oklch(89.4% 0.057 293.283)
+// oklch(90.2% 0.063 306.703)
+// oklch(90.3% 0.076 319.62)
+// oklch(90.3% 0.076 319.62)
+// oklch(89.2% 0.058 10.001)
 
 const exams: Exam[] = [
   {
@@ -45,6 +65,7 @@ const exams: Exam[] = [
     passing_score: 75,
     attempts_allowed: 3,
     score_method: "total_correct",
+    color: "oklch(88.5% 0.062 18.334)",
   },
   {
     id: 2,
@@ -61,6 +82,7 @@ const exams: Exam[] = [
     status: "approved",
     passing_score: 80,
     score_method: "weighted",
+    color: "oklch(90.1% 0.076 70.697)",
   },
   {
     id: 3,
@@ -77,6 +99,7 @@ const exams: Exam[] = [
     status: "approved",
     attempts_allowed: 5,
     score_method: "time_based",
+    color: "oklch(92.4% 0.12 95.746)",
   },
   {
     id: 4,
@@ -92,6 +115,7 @@ const exams: Exam[] = [
     status: "pending",
     passing_score: 70,
     score_method: "total_correct",
+    color: "oklch(94.5% 0.129 101.54)",
   },
   {
     id: 5,
@@ -106,6 +130,7 @@ const exams: Exam[] = [
     category: "Grammar",
     status: "approved",
     score_method: "total_correct",
+    color: "oklch(93.8% 0.127 124.321)",
   },
   {
     id: 6,
@@ -123,6 +148,7 @@ const exams: Exam[] = [
     passing_score: 75,
     attempts_allowed: 1,
     score_method: "total_correct",
+    color: "oklch(92.5% 0.084 155.995)",
   },
   {
     id: 7,
@@ -138,6 +164,7 @@ const exams: Exam[] = [
     category: "Vocabulary",
     status: "approved",
     score_method: "weighted",
+    color: "oklch(90.5% 0.093 164.15)",
   },
   {
     id: 8,
@@ -153,6 +180,7 @@ const exams: Exam[] = [
     status: "pending",
     passing_score: 80,
     score_method: "total_correct",
+    color: "oklch(91% 0.096 180.426)",
   },
   {
     id: 9,
@@ -168,6 +196,7 @@ const exams: Exam[] = [
     category: "Grammar",
     status: "approved",
     score_method: "time_based",
+    color: "oklch(91.7% 0.08 205.041)",
   },
   {
     id: 10,
@@ -184,6 +213,7 @@ const exams: Exam[] = [
     status: "approved",
     attempts_allowed: 10,
     score_method: "total_correct",
+    color: "oklch(90.1% 0.058 230.902)",
   },
   {
     id: 11,
@@ -199,6 +229,7 @@ const exams: Exam[] = [
     category: "Vocabulary",
     status: "approved",
     score_method: "total_correct",
+    color: "oklch(88.2% 0.059 254.128)",
   },
   {
     id: 12,
@@ -214,6 +245,7 @@ const exams: Exam[] = [
     category: "Business English",
     status: "archived",
     score_method: "total_correct",
+    color: "oklch(87% 0.065 274.039)",
   },
   {
     id: 13,
@@ -229,6 +261,7 @@ const exams: Exam[] = [
     category: "Grammar",
     status: "rejected",
     score_method: "total_correct",
+    color: "oklch(89.4% 0.057 293.283)",
   },
   {
     id: 14,
@@ -245,6 +278,7 @@ const exams: Exam[] = [
     status: "approved",
     passing_score: 70,
     score_method: "weighted",
+    color: "oklch(90.2% 0.063 306.703)",
   },
   {
     id: 15,
@@ -260,6 +294,7 @@ const exams: Exam[] = [
     category: "Vocabulary",
     status: "pending",
     score_method: "time_based",
+    color: "oklch(90.3% 0.076 319.62)",
   },
   {
     id: 16,
@@ -277,6 +312,7 @@ const exams: Exam[] = [
     passing_score: 85,
     attempts_allowed: 2,
     score_method: "total_correct",
+    color: "oklch(90.3% 0.076 319.62)",
   },
   {
     id: 17,
@@ -292,6 +328,7 @@ const exams: Exam[] = [
     category: "Grammar",
     status: "approved",
     score_method: "total_correct",
+    color: "oklch(89.2% 0.058 10.001)",
   },
   {
     id: 18,
@@ -307,6 +344,7 @@ const exams: Exam[] = [
     category: "Vocabulary",
     status: "approved",
     score_method: "time_based",
+    color: "oklch(92.5% 0.084 155.995)",
   },
   {
     id: 19,
@@ -322,6 +360,7 @@ const exams: Exam[] = [
     category: "Vocabulary",
     status: "archived",
     score_method: "weighted",
+    color: "oklch(92.5% 0.084 155.995)",
   },
   {
     id: 20,
@@ -338,6 +377,7 @@ const exams: Exam[] = [
     status: "approved",
     passing_score: 70,
     score_method: "total_correct",
+    color: "oklch(89.2% 0.058 10.001)",
   },
   {
     id: 21,
@@ -352,6 +392,7 @@ const exams: Exam[] = [
     category: "General",
     status: "deleted",
     score_method: "total_correct",
+    color: "oklch(90.1% 0.058 230.902)",
   },
   {
     id: 22,
@@ -368,6 +409,7 @@ const exams: Exam[] = [
     status: "pending",
     passing_score: 75,
     score_method: "weighted",
+    color: "oklch(88.2% 0.059 254.128)",
   },
   {
     id: 23,
@@ -383,6 +425,7 @@ const exams: Exam[] = [
     category: "Grammar",
     status: "approved",
     score_method: "total_correct",
+    color: "oklch(93.8% 0.127 124.321)",
   },
   {
     id: 24,
@@ -399,6 +442,7 @@ const exams: Exam[] = [
     status: "approved",
     attempts_allowed: 3,
     score_method: "total_correct",
+    color: "oklch(90.1% 0.076 70.697)",
   },
 ];
 

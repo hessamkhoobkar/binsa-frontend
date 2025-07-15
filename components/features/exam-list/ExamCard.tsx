@@ -7,7 +7,10 @@ export default function ExamCard({ exam }: { exam: Exam }) {
   return (
     <div className="card card-border bg-base-100 col-span-1">
       <div className="card-body p-2">
-        <div className="flex aspect-square w-full flex-col items-start justify-start rounded-xl bg-amber-100 p-3">
+        <div
+          className="flex aspect-square w-full flex-col items-start justify-start rounded-xl p-3"
+          style={{ backgroundColor: exam.color }}
+        >
           <div className="badge mb-2 rounded-lg border-transparent bg-white/70">
             <span>{exam.type === "ai" ? "AI Generated" : "Manual"}</span>
           </div>
