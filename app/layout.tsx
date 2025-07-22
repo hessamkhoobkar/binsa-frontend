@@ -1,4 +1,9 @@
+import React from "react";
 import type { Metadata } from "next";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
+import { AuthProvider } from "@/context/AuthContext";
+
 import { Rubik } from "next/font/google";
 import "./globals.css";
 
@@ -17,9 +22,15 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const [queryClient] = React.useState(() => new QueryClient());
   return (
     <html lang="en">
-      <body className={`${rubikSans.className} antialiased`}>{children}</body>
+      <body className={`${rubikSans.className} antialiased`}>
+        <QueryClientProvider client={queryClient}>
+          <AuthProvider>{children}</AuthProvider>
+          <ReactQueryDevtools initialIsOpen={false} />
+        </QueryClientProvider>
+      </body>
     </html>
   );
 }
