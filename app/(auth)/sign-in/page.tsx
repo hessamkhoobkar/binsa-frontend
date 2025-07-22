@@ -8,6 +8,7 @@ import { signInSchema, SignInFormValues } from "@/lib/schemas";
 import { useAuth } from "@/hooks/useAuth";
 import { isAxiosError } from "axios";
 import api from "@/lib/api";
+import Link from "next/link";
 
 export default function SignIn() {
   const router = useRouter();
@@ -57,12 +58,10 @@ export default function SignIn() {
         onSubmit={handleSubmit(onSubmit)}
         className="flex w-full flex-col gap-4"
       >
-        {/* Email Input */}
         <div className="w-full">
           <label
             className={`input flex h-12 w-full items-center gap-2 ${errors.email ? "input-error" : ""}`}
           >
-            {/* Email Icon */}
             <svg
               className="h-[1em] opacity-50"
               xmlns="http://www.w3.org/2000/svg"
@@ -91,12 +90,10 @@ export default function SignIn() {
           )}
         </div>
 
-        {/* Password Input */}
         <div className="w-full">
           <label
             className={`input flex h-12 w-full items-center gap-2 ${errors.password ? "input-error" : ""}`}
           >
-            {/* Password Icon */}
             <svg
               className="h-[1em] opacity-50"
               xmlns="http://www.w3.org/2000/svg"
@@ -127,7 +124,6 @@ export default function SignIn() {
           )}
         </div>
 
-        {/* API Error Message */}
         {apiError && (
           <div className="alert alert-error text-sm">{apiError}</div>
         )}
@@ -197,15 +193,15 @@ export default function SignIn() {
       <div className="mt-8 flex flex-col gap-1">
         <p className="text-center text-sm">
           Don&apos;t have an account?{" "}
-          <a href="#" className="link">
+          <Link href="/sign-up" className="link">
             Sign up
-          </a>
+          </Link>
         </p>
         <p className="text-center text-sm">
           Forgot your password?{" "}
-          <a href="#" className="link">
+          <Link href="/forgot-password" className="link">
             Reset password
-          </a>
+          </Link>
         </p>
       </div>
     </div>
