@@ -16,6 +16,7 @@
 }
 
 @layer components {
+  /* Custom container styles */
   .binsa-container {
     width: 100%;
     padding-inline-end: 1rem;
@@ -33,6 +34,12 @@
 
 @utility select {
   @apply cursor-pointer transition-all duration-200 ease-in-out hover:bg-white;
+}
+
+@layer utilities {
+  .input {
+    @apply hover:border-neutral transition-all duration-100 ease-in-out focus-within:bg-white focus:bg-white;
+  }
 }
 
 /* 
