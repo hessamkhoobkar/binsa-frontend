@@ -5,12 +5,14 @@ import Plus from "@/components/icons/Plus";
 import BellLinear from "@/components/icons/BellLinear";
 import MagniferLinear from "@/components/icons/MagniferLinear";
 import ArrowDownLinear from "@/components/icons/ArrowDownLinear";
+import { useAuth } from "@/hooks/useAuth";
 
 export default function AuthLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  const { user } = useAuth();
   return (
     <div className="flex min-h-screen w-full flex-col items-start justify-start">
       <header className="bg-base-200 w-full">
@@ -62,8 +64,8 @@ export default function AuthLayout({
                   <div className="w-10 rounded-full">
                     <Image
                       className="w-10 rounded-full"
-                      src={`/demo/img/sophia-perez.webp`}
-                      alt="Batman"
+                      src={user?.avatarUrl || "/demo/img/sophia-perez.webp"}
+                      alt={user?.name || "User"}
                       width={40}
                       height={40}
                     />
@@ -78,11 +80,9 @@ export default function AuthLayout({
                 className="dropdown-content menu bg-base-100 rounded-box z-1 mt-1 w-52 p-2 shadow-sm"
               >
                 <li>
-                  <a>Item 1</a>
+                  <span>{user?.name || "Guest"}</span>
                 </li>
-                <li>
-                  <a>Item 2</a>
-                </li>
+                {/* Add more user menu items here */}
               </ul>
             </div>
           </div>
